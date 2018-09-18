@@ -147,6 +147,11 @@ header {
   flex-direction: row;
 }
 
+
+#heroButtons a:hover{
+  text-decoration: none;
+}
+
 #heroButtons button {
   text-transform: uppercase;
   border-radius: 4px;

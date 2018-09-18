@@ -49,8 +49,9 @@ const CreateActivityList = (
   <ul>
     <li>Look for opportunities in problems</li>
     <li>Work on a capstone project</li>
+    <li><b>Get funded for up to INR 5L</b></li>
     <li>Push it to market</li>
-    <li>Build a <b>Startup</b></li>
+    <li>Build it as a <b>Startup</b></li>
     <li>Learn to lead</li>
   </ul>
 );

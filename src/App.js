@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobeAmericas, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Home from './components/Home';
-import ApplyPage from './components/Apply';
+import Apply from './components/Apply';
 import Work from './components/Work';
 import FAQs from './components/FAQs';
 import People from './components/People';
@@ -32,11 +32,13 @@ class App extends Component {
       <Router onUpdate={fireTracking}>
         <div className="container-fluid" id="wrapper">
           <Header apply={apply}/>
+          <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/people" component={People} />
           <Route path="/work" component={Work} />
           <Route path="/faq" component={FAQs} />
-          <Route path="/apply" component={ApplyPage} />
+          <Route path="/apply" component={Apply} />
+          </Switch>
           <Footer />
         </div>
       </Router>
